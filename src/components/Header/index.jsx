@@ -13,16 +13,16 @@ const Header = () => {
         <div className="header__inner">
           <div className="header__inner__logo"></div>
           <nav className="header__inner__nav">
-            <a href="#" className="nav__element">
+            <a href="#home" className="nav__element">
               Главная
             </a>
-            <a href="#" className="nav__element">
+            <a href="#services" className="nav__element">
               Услуги
             </a>
-            <a href="#" className="nav__element">
+            <a href="#projects" className="nav__element">
               Наши работы
             </a>
-            <a href="#" className="nav__element">
+            <a href="#contacts" className="nav__element">
               Контакты
             </a>
           </nav>
