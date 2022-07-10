@@ -1,0 +1,107 @@
+.footer {
+  margin-top: 90px;
+
+  &__inner {
+    background-color: white;
+
+    &__content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 50px 0;
+
+      .content__first {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 10px;
+
+        img {
+          margin-bottom: 5px;
+          max-width: 100%;
+        }
+        a {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          text-decoration-line: underline;
+          color: var(--black);
+          margin-bottom: 20px;
+        }
+      }
+
+      .content__second {
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &__content {
+          display: flex;
+          flex-direction: column;
+          margin: 0 10px;
+
+          h4 {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 36px;
+            text-transform: uppercase;
+            color: var(--black);
+            margin-bottom: 12px;
+          }
+
+          ul {
+            list-style: none;
+          }
+
+          li {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 36px;
+            color: var(--black);
+          }
+
+          a {
+            text-decoration: none;
+            color: inherit;
+          }
+        }
+      }
+
+      @media (max-width: 845px) {
+        flex-direction: column;
+
+        .content__first {
+          margin-right: 0;
+          margin-bottom: 15px;
+          align-items: center;
+        }
+        .content__second {
+          width: 100%;
+        }
+      }
+      @media (max-width: 422px) {
+        text-align: center;
+
+        .content__second {
+          flex-direction: column;
+          justify-content: center;
+
+          &__content:first-child {
+            margin: 10px 0;
+          }
+        }
+      }
+    }
+
+    h3 {
+      background: #2d2d2d;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 36px;
+      color: white;
+      text-align: center;
+      padding: 5px;
+    }
+  }
+}
